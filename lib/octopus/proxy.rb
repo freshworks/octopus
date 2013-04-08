@@ -96,8 +96,8 @@ class Octopus::Proxy
       self.current_shard = shard
       yield
     ensure
-      self.block = last_block || false
-      self.current_shard = older_shard
+      #self.block = last_block || false
+      #self.current_shard = older_shard
     end
   end
   
